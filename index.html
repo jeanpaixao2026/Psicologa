@@ -87,7 +87,7 @@ a:hover{color:#7E4029}
     <div style="position:absolute;left:-8%;bottom:-18%;width:52%;height:48%;border-radius:40% 60% 50% 50%;background:radial-gradient(ellipse at 50% 60%,rgba(214,140,110,0.45),rgba(214,140,110,0) 68%);filter:blur(10px);pointer-events:none"></div>
     <div style="position:absolute;right:-4%;top:12%;width:36%;height:80%;border-radius:55% 45% 40% 60%;background:radial-gradient(ellipse at 60% 50%,rgba(210,138,108,0.42),rgba(210,138,108,0) 66%);filter:blur(12px);pointer-events:none"></div>
   </sc-if>
-  <div style="position:relative;max-width:1200px;margin:0 auto;padding:0 clamp(20px,6vw,96px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));align-items:end;gap:clamp(24px,4vw,56px)">
+  <div style="position:relative;max-width:1200px;margin:0 auto;padding:0 clamp(20px,6vw,96px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));align-items:stretch;gap:clamp(24px,4vw,56px)">
     <div style="padding:clamp(56px,9vw,120px) 0 clamp(24px,9vw,120px);align-self:center;display:flex;flex-direction:column;gap:22px;max-width:480px">
       <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:#A85A3D">Psicoterapia para adolescentes e adultos</span>
       <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(38px,5vw,58px);line-height:1.08;color:#3A2F2A;text-wrap:balance">Um espaço para<br>ser você por inteiro.</h1>
@@ -100,8 +100,8 @@ a:hover{color:#7E4029}
         <span style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#7A6A5E">Psicóloga • CRP 11/26124</span>
       </div>
     </div>
-    <div style="position:relative;height:clamp(420px,46vw,580px);max-width:460px;width:100%;justify-self:center">
-      <image-slot id="hero-foto" src="/images/assucenna-hero.webp" shape="rect" placeholder="images/assucenna-hero.jpg — retrato de meio corpo, luz natural" style="width:100%;height:100%"></image-slot>
+    <div style="position:relative;min-height:clamp(420px,46vw,580px);max-width:460px;width:100%;justify-self:center">
+      <image-slot id="hero-foto" src="/images/assucenna-hero.webp" shape="rect" placeholder="images/assucenna-hero.jpg — retrato de meio corpo, luz natural" style="width:100%;height:100%;position:absolute;inset:0"></image-slot>
     </div>
   </div>
 </section>

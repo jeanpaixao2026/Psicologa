@@ -235,7 +235,7 @@ a:hover{color:#7E4029}
       <sc-for list="{{ posts }}" as="p" hint-placeholder-count="3">
         <article style="display:flex;flex-direction:column;gap:14px">
           <div style="aspect-ratio:6/5;width:100%">
-            <image-slot id="{{ p.id }}" shape="rect" placeholder="{{ p.ph }}" style="width:100%;height:100%"></image-slot>
+            <image-slot id="{{ p.id }}" src="{{ p.img }}" shape="rect" placeholder="{{ p.ph }}" style="width:100%;height:100%"></image-slot>
           </div>
           <h3 style="margin:6px 0 0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:22px;line-height:1.2;color:#3A2F2A;text-wrap:balance">{{ p.title }}</h3>
           <p style="margin:0;font-size:14px;line-height:1.7;color:#5E4F45;text-wrap:pretty">{{ p.text }}</p>
@@ -341,9 +341,9 @@ class Component extends DCLogic {
         { n: '03', title: 'Processo terapêutico', text: 'A partir da sua experiência, vamos construindo juntos o processo terapêutico, respeitando seu ritmo, sua singularidade e sua autonomia.' }
       ],
       posts: [
-        { href: '/conteudos#como-diminuir-a-autocobranca', id: 'post-1', ph: 'Imagem editorial — mãos, xícara, luz natural', title: 'Como diminuir a autocobrança?', text: 'Uma reflexão sobre exigências, expectativas e a forma como você se trata.' },
-        { href: '/conteudos#quando-a-ansiedade-ocupa-espaco-demais', id: 'post-2', ph: 'Imagem editorial — conversa, poltronas', title: 'Quando a ansiedade começa a ocupar espaço demais?', text: 'Sobre perceber como a ansiedade aparece no dia a dia e quando buscar escuta.' },
-        { href: '/conteudos#autoestima-e-a-forma-como-voce-se-trata', id: 'post-3', ph: 'Imagem editorial — caderno, planta, tecido', title: 'Autoestima também é sobre a forma como você se trata.', text: 'Um olhar para a relação que você constrói consigo mesmo.' }
+        { href: '/conteudos#como-diminuir-a-autocobranca', id: 'post-1', img: '/images/assucenna-sobre.webp', ph: 'Imagem editorial — mãos, xícara, luz natural', title: 'Como diminuir a autocobrança?', text: 'Uma reflexão sobre exigências, expectativas e a forma como você se trata.' },
+        { href: '/conteudos#quando-a-ansiedade-ocupa-espaco-demais', id: 'post-2', img: '/images/consultorio.webp', ph: 'Imagem editorial — conversa, poltronas', title: 'Quando a ansiedade começa a ocupar espaço demais?', text: 'Sobre perceber como a ansiedade aparece no dia a dia e quando buscar escuta.' },
+        { href: '/conteudos#autoestima-e-a-forma-como-voce-se-trata', id: 'post-3', img: '/images/ambiente.webp', ph: 'Imagem editorial — caderno, planta, tecido', title: 'Autoestima também é sobre a forma como você se trata.', text: 'Um olhar para a relação que você constrói consigo mesmo.' }
       ]
     };
   }
